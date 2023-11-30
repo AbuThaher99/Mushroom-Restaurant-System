@@ -1,0 +1,29 @@
+.text-field{
+    -fx-background-color: transparent;
+    -fx-border-color: #171E21;
+    -fx-border-width: 0px 0px 0px 0px;
+    -fx-text-fill: white;
+    -fx-font-family: "Barlow Condensed";
+}
+.button{
+    -fx-background-color: transparet;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-radius: 5;
+    -fx-border-width: 2px 2px 2px 2px;
+}
+.button:hover {
+    -fx-background-color: #2A2E37;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-border-width: 2px 2px 2px 2px;
+}
+
+.button:pressed {
+    -fx-background-color: #3A3F48;
+    -fx-border-color: white;
+    -fx-border-width: 2px 2px 2px 2px;
+}
+.label{
+    -fx-text-fill: white;
+}

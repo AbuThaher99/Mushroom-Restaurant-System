@@ -1,0 +1,158 @@
+* {
+    -fx-primary : #2A2E37;
+    -fx-secondary : #3A3F48;
+    -fx-primarytext : white;
+    -fx-blue: #1976D2;
+    -fx-red: #FF0000;
+    -fx-color-1:#1976D2;
+}
+
+.root{
+    -fx-background-color: -fx-primary;
+}
+/*.button{*/
+/*    -fx-background-color: transparent;*/
+/*    -fx-text-fill: white;*/
+/*    -fx-background-radius: 20;*/
+/*}*/
+
+
+/*.transparent-btn{*/
+/*    -fx-background-color: transparent;*/
+/*}*/
+
+
+.button {
+    -fx-color-one: #8FC9FF;
+    -fx-color-two: #8FC9FF;
+    -fx-color-three: #8FC9FF;
+    -fx-text-fill: #325176;
+    -fx-background-radius: 20;
+    -fx-font-size: 14px;
+    -fx-font-family: "Uni Sans Heavy CAPS";
+
+    -fx-background-color:
+            linear-gradient(#8FC9FF, -fx-color-one),
+            linear-gradient(#8FC9FF 0.0%, -fx-color-two 20.0%, -fx-color-one 100.0%),
+            linear-gradient(#8FC9FF 0.0%, -fx-color-three 50.0%);
+    -fx-background-radius: 8.0, 7.0, 6.0;
+    -fx-background-insets: 0.0, 1.0, 2.0;
+    -fx-effect: dropshadow( three-pass-box, rgba(0.0, 0.0, 0.0, 0.6), 5.0, 0.0, 0.0, 1.0);
+}
+.button:hover {
+    -fx-color-one: #6b707c;
+    -fx-color-two: #747f93;
+    -fx-color-three: #8cb8d0;
+}
+
+.button:pressed {
+    -fx-color-one: #3f6bb7;
+    -fx-color-two: #326294;
+    -fx-color-three: #21466e;
+}
+
+
+.root-label{
+    -fx-text-fill: white;
+}
+
+.footer .label{
+    -fx-text-fill: -fx-primarytext;
+}
+
+.text-field{
+    -fx-background-color: transparent;
+    -fx-border-color: #8FC9FF;
+    -fx-border-width: 0px 0px 2px 0px;
+    -fx-text-fill: white;
+    -fx-font-family: "Uni Sans Heavy Italic CAPS";
+}
+/*TableView Default*/
+.table-view{
+    -fx-background-color: derive(-fx-primary, 10%);
+    -fx-font-size: 12px;
+    -fx-border-color: derive(-fx-secondary, -60%);
+    -fx-font-family: "Assaf Font";
+}
+.table-row-cell {
+    -fx-cell-size: 30px;
+}
+.table-view .column-header-background{
+    -fx-background-color: -fx-primary;
+}
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+.table-view .table-cell{
+    -fx-text-fill: white;
+    -fx-font-weight: BOLD;
+}
+.table-row-cell{
+    -fx-background-color: -fx-primary;
+    -fx-border-color: transparent;
+    -fx-table-cell-border-color: transparent;
+}
+.table-column{
+    -fx-alignment: CENTER;
+}
+.table-row-cell:even{
+    -fx-background-color: derive(-fx-primary, 10%);
+}
+.table-row-cell:selected {
+    -fx-background-color: #455A64;
+
+    -fx-text-fill: -fx-primarytext;
+}
+.placeholder .label{
+    -fx-text-fill: white;
+}
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background,
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+}
+.table-view > .virtual-flow > .scroll-bar > .increment-button,
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-text-fill: white;
+}
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb{
+    -fx-background-color: derive(-fx-primary, 60%);
+    -fx-border-color: transparent;
+    -fx-background-radius: 5em;
+}
+.table-view .filler{
+    -fx-fill: -fx-primary;
+    -fx-background-color: -fx-primary;
+}
+.table-context
+{
+    -fx-base: -fx-primary;
+}
+.combo-box-normal{
+    -jfx-focus-color: -fx-primarytext;
+    -jfx-unfocus-color: -fx-primarytext;
+    -fx-text-inner-color: -fx-primarytext;
+    -fx-prompt-text-fill: -fx-primarytext;
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-size: 20;
+    -fx-font-weight: BOLD;
+}
+.combo-box .list-cell:filled:selected .text,
+.choice-box .list-cell:filled:selected .text {
+    -fx-fill:-fx-primarytext;
+}
+
+.label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow( gaussian , rgba(255.0,255.0,255.0,0.5) , 0.0,0.0,0.0,1.0 );
+}
